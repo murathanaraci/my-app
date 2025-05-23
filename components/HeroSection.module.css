@@ -1,0 +1,21 @@
+.hero {
+  background: url('/hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.cta {
+  margin-top: 1rem;
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+}

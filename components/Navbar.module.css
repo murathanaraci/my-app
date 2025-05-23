@@ -1,0 +1,117 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000; /* siyah arka plan */
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #ff6600;
+}
+
+.menuToggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li a,
+.dropdown span {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navList li a:hover,
+.dropdown span:hover {
+  color: #ff6600;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  list-style: none;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.dropdownMenu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdownMenu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownMenu li a:hover {
+  color: #ff6600;
+}
+
+.showDropdown {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .navList {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .dropdownMenu {
+    position: static;
+    padding-left: 1rem;
+  }
+}

@@ -1,0 +1,55 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #ff6600;
+  padding: 2rem 0 1rem 0;
+  font-size: 0.95rem;
+}
+.footer a {
+  background-color: #1a1a1a;
+  color: #ff6600;
+  font-size: 0.95rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.logoSection {
+  flex: 1 1 200px;
+  text-align: baseline;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.linksSection,
+.contactSection,
+.socialSection {
+  flex: 1 1 200px;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksSection li {
+  margin: 0.5rem 0;
+}
+
+.bottomBar {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}

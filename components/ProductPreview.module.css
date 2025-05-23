@@ -1,0 +1,23 @@
+.products {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.card {
+  background: #eee;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+.more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: red;
+  text-decoration: none;
+}
