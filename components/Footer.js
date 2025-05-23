@@ -15,16 +15,16 @@ export default function Footer() {
           <h4>Menü</h4>
           <ul>
             <li>
-              <a href="/">Ana Sayfa</a>
+              <link href="/">Ana Sayfa</link>
             </li>
             <li>
-              <a href="/urunler">Ürünler</a>
+              <link href="/urunler">Ürünler</link>
             </li>
             <li>
-              <a href="/hakkimizda">Hakkımızda</a>
+              <link href="/hakkimizda">Hakkımızda</link>
             </li>
             <li>
-              <a href="/iletisim">İletişim</a>
+              <link href="/iletisim">İletişim</link>
             </li>
           </ul>
         </div>
@@ -42,12 +42,12 @@ export default function Footer() {
         <div className={styles.socialSection}>
           <h4>Bizi Takip Edin</h4>
           <div className={styles.icons}>
-            <a href="#">
+            <link href="#">
               <FaFacebookF />
-            </a>
-            <a href="#">
+            </link>
+            <link href="#">
               <FaInstagram />
-            </a>
+            </link>
           </div>
         </div>
       </div>

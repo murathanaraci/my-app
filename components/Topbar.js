@@ -24,7 +24,7 @@ export default function Topbar() {
           <span>Hafta içi: 09:00 - 18:00</span>
         </div>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-          <a
+          <link
             href="https://wa.me/905551112233"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,11 +32,11 @@ export default function Topbar() {
           >
             <FaWhatsapp />
             <span>+90 555 111 22 33</span>
-          </a>
-          <a href="mailto:info@firma.com" className={styles.link}>
+          </link>
+          <link href="mailto:info@firma.com" className={styles.link}>
             <FaEnvelope />
             <span>info@firma.com</span>
-          </a>
+          </link>
         </div>
       </div>
     </div>

@@ -18,9 +18,9 @@ export default function ProductPreview() {
           <div>Gazlı Söndürme</div>
         </div>
       </div>
-      <a href="/urunler" className={styles.more}>
+      <link href="/urunler" className={styles.more}>
         Tüm Ürünler
-      </a>
+      </link>
     </section>
   );
 }
