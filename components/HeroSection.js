@@ -1,4 +1,5 @@
 import styles from "./HeroSection.module.css";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -6,9 +7,9 @@ export default function HeroSection() {
       <div className={styles.overlay}>
         <h1>Yangın Söndürme Sistemlerinde Uzman</h1>
         <p>Profesyonel çözümler için hemen bizimle iletişime geçin.</p>
-        <link href="/iletisim" className={styles.cta}>
+        <Link href="/iletisim" className={styles.cta}>
           Bize Ulaşın
-        </link>
+        </Link>
       </div>
     </section>
   );

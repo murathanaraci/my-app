@@ -2,8 +2,8 @@
   position: relative;
   height: 60vh;
   overflow: hidden;
-  position: relative;
-  height: 60vh;
+  max-width: 900px; /* Added for better layout on large screens */
+  margin: 0 auto; /* Center carousel horizontally */
 }
 
 .slide {
@@ -14,11 +14,13 @@
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  pointer-events: none; /* Prevent interaction with inactive slides */
 }
 
 .active {
   opacity: 1;
   z-index: 1;
+  pointer-events: auto; /* Allow interaction with active slide */
 }
 
 .overlay {
@@ -28,6 +30,8 @@
   position: absolute;
   bottom: 10%;
   left: 5%;
+  border-radius: 8px; /* Added for softer overlay */
+  max-width: 90%; /* Prevent overlay from overflowing */
 }
 
 .dots {
@@ -35,6 +39,7 @@
   bottom: 1rem;
   width: 100%;
   text-align: center;
+  z-index: 2; /* Ensure dots are above slides */
 }
 
 .dot,
@@ -46,8 +51,11 @@
   border-radius: 50%;
   background: #bbb;
   cursor: pointer;
+  border: 1px solid #fff; /* Added for better visibility */
+  transition: background 0.3s;
 }
 
 .dotActive {
-  background: white;
+  background: #fff;
+  border: 1px solid #bbb;
 }

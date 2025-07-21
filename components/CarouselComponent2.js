@@ -34,6 +34,9 @@ export default function CarouselComponent2() {
     return () => clearInterval(interval);
   }, []);
 
+  // Prevent rendering if styles are not loaded (optional, for SSR safety)
+  if (!styles.carousel) return null;
+
   return (
     <div className={styles.carousel}>
       {slides.map((slide, index) => (
@@ -42,7 +45,10 @@ export default function CarouselComponent2() {
           className={`${styles.slide} ${
             index === current ? styles.active : ""
           }`}
-          style={{ backgroundImage: `url(${slide.image})` }}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            display: index === current ? "block" : "none", // Only show active slide
+          }}
         >
           <div className={styles.overlay}>
             <h2>{slide.title}</h2>
@@ -56,6 +62,7 @@ export default function CarouselComponent2() {
             key={idx}
             className={idx === current ? styles.dotActive : styles.dot}
             onClick={() => setCurrent(idx)}
+            style={{ cursor: "pointer" }}
           ></span>
         ))}
       </div>

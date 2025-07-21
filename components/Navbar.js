@@ -1,16 +1,30 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar({ topbarVisible }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [urunlerOpen, setUrunlerOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+  useEffect(() => {
+    // Update isMobile on mount and on resize
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 768);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Offset for topbar (height: 40px, adjust if your topbar height is different)
+  const navbarStyle = topbarVisible
+    ? { top: "40px", transition: "top 0.3s" }
+    : { top: 0, transition: "top 0.3s" };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} style={navbarStyle}>
       <Link href="/" className={styles.logo}>
         <div className={styles.logo}>Tuğsan Yangın</div>
       </Link>
@@ -18,6 +32,8 @@ export default function Navbar() {
       <button
         className={styles.menuToggle}
         onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Menüyü Aç/Kapat"
+        aria-expanded={menuOpen}
       >
         ☰
       </button>
@@ -35,6 +51,9 @@ export default function Navbar() {
           <span
             onClick={() => isMobile && setUrunlerOpen(!urunlerOpen)}
             style={{ cursor: "pointer" }}
+            tabIndex={0}
+            aria-haspopup="true"
+            aria-expanded={urunlerOpen}
           >
             Ürünler ▾
           </span>
@@ -45,7 +64,7 @@ export default function Navbar() {
             }`}
           >
             <li>
-              <Link href="../urunler/sogutma">Soğutma Sistemleri</Link>
+              <Link href="/urunler/sogutma">Soğutma Sistemleri</Link>
             </li>
             <li>
               <Link href="/urunler/yangin">Yangın Söndürme</Link>

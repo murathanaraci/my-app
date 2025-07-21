@@ -13,7 +13,8 @@ export default function Sogutma() {
           minHeight: "80vh",
         }}
       >
-        <h1>SOĞUTMA</h1>
+        <h1>Soğutma Sistemleri</h1>
+        {/* Ürün veya açıklama ekleyebilirsiniz */}
       </main>
       <Footer />
     </>

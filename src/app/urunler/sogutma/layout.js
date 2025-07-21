@@ -4,5 +4,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <body>{children}</body>;
+  return (
+    <html lang="tr">
+      <body style={{ margin: 0, padding: 0, background: "#fff" }}>
+        {children}
+      </body>
+    </html>
+  );
 }

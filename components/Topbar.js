@@ -4,17 +4,20 @@ import { useState, useEffect } from "react";
 import styles from "./Topbar.module.css";
 import { FaWhatsapp, FaEnvelope, FaClock } from "react-icons/fa";
 
-export default function Topbar() {
+export default function Topbar({ onVisibleChange }) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll() {
       setVisible(window.scrollY === 0);
-    };
-
+    }
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (onVisibleChange) onVisibleChange(visible);
+  }, [visible, onVisibleChange]);
 
   return (
     <div className={`${styles.topbar} ${!visible ? styles.hiddenTopbar : ""}`}>
@@ -23,8 +26,8 @@ export default function Topbar() {
           <FaClock />
           <span>Hafta içi: 09:00 - 18:00</span>
         </div>
-        <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-          <link
+        <div className={styles.contactLinks}>
+          <a
             href="https://wa.me/905551112233"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,11 +35,11 @@ export default function Topbar() {
           >
             <FaWhatsapp />
             <span>+90 555 111 22 33</span>
-          </link>
-          <link href="mailto:info@firma.com" className={styles.link}>
+          </a>
+          <a href="mailto:info@firma.com" className={styles.link}>
             <FaEnvelope />
             <span>info@firma.com</span>
-          </link>
+          </a>
         </div>
       </div>
     </div>

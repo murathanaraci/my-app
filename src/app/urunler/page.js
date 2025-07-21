@@ -19,6 +19,7 @@ export default function Urunler() {
           <li>Yangın Alarm Sistemleri</li>
           <li>Otomatik Sprinkler Sistemleri</li>
           <li>Duman Dedektörleri</li>
+          {/* Daha fazla ürün ekleyebilirsiniz */}
         </ul>
       </main>
       <Footer />

@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 40px; /* Ensure fixed height */
   background-color: #1a1a1a;
   color: white;
   font-size: 0.875rem; /* text-sm */
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: center;
   padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* subtle shadow for depth */
 }
 
 .hiddenTopbar {
@@ -22,6 +24,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 @media (min-width: 640px) {
@@ -39,8 +43,16 @@
   transition: color 0.3s ease;
   color: inherit;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .link:hover {
   color: #22c55e; /* green-400 */
+}
+
+.contactLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

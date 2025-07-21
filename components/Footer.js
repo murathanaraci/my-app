@@ -1,6 +1,7 @@
 "use client";
 import styles from "./Footer.module.css";
 import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -15,16 +16,16 @@ export default function Footer() {
           <h4>Menü</h4>
           <ul>
             <li>
-              <link href="/">Ana Sayfa</link>
+              <Link href="/">Ana Sayfa</Link>
             </li>
             <li>
-              <link href="/urunler">Ürünler</link>
+              <Link href="/urunler">Ürünler</Link>
             </li>
             <li>
-              <link href="/hakkimizda">Hakkımızda</link>
+              <Link href="/hakkimizda">Hakkımızda</Link>
             </li>
             <li>
-              <link href="/iletisim">İletişim</link>
+              <Link href="/iletisim">İletişim</Link>
             </li>
           </ul>
         </div>
@@ -42,12 +43,12 @@ export default function Footer() {
         <div className={styles.socialSection}>
           <h4>Bizi Takip Edin</h4>
           <div className={styles.icons}>
-            <link href="#">
+            <Link href="#" aria-label="Facebook">
               <FaFacebookF />
-            </link>
-            <link href="#">
+            </Link>
+            <Link href="#" aria-label="Instagram">
               <FaInstagram />
-            </link>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,4 +11,14 @@
   color: white;
   text-decoration: none;
   display: inline-block;
+  border-radius: 4px; /* Added for a modern look */
+  font-weight: bold; /* Make button text bold */
+  transition: background 0.2s;
+  border: none; /* Remove border if any */
+  cursor: pointer; /* Show pointer on hover */
+}
+.button:hover,
+.button:focus {
+  background: #b30000; /* Darker red on hover/focus */
+  outline: none;
 }

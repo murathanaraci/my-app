@@ -2,7 +2,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import HeroSection from "../../../components/HeroSection";
 
-export default function İletişim() {
+export default function Iletisim() {
   return (
     <>
       <Navbar />
@@ -15,6 +15,7 @@ export default function İletişim() {
         }}
       >
         <h1>İletişim</h1>
+        {/* You may want to add a contact form or contact details here */}
         <HeroSection />
       </main>
       <Footer />
