@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 40px; /* Ensure fixed height */
+  height: fit-content; /* Ensure fixed height */
   background-color: #1a1a1a;
   color: white;
   font-size: 0.875rem; /* text-sm */
