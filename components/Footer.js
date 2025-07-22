@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Footer.module.css";
-import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaClock } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -32,23 +32,20 @@ export default function Footer() {
 
         <div className={styles.contactSection}>
           <h4>İletişim</h4>
-          <p>
-            <FaPhone /> 0 (312) 000 00 00
-          </p>
-          <p>
-            <FaEnvelope /> info@tugsan.com
-          </p>
-        </div>
-
-        <div className={styles.socialSection}>
-          <h4>Bizi Takip Edin</h4>
-          <div className={styles.icons}>
-            <Link href="#" aria-label="Facebook">
-              <FaFacebookF />
-            </Link>
-            <Link href="#" aria-label="Instagram">
-              <FaInstagram />
-            </Link>
+          <div className={styles.contactLinks}>
+            <a
+              href="https://wa.me/905324791358"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              <FaWhatsapp />
+              <span>+90 532 479 13 58</span>
+            </a>
+            <a href="mailto:info@tugsanyangin.com.tr" className={styles.link}>
+              <FaEnvelope />
+              <span>info@tugsanyangin.com.tr</span>
+            </a>
           </div>
         </div>
       </div>

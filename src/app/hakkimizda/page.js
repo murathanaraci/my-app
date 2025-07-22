@@ -1,7 +1,7 @@
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
-export default function Hakkimizda() {
+export default function Hakkında() {
   return (
     <>
       <Navbar />
@@ -13,7 +13,7 @@ export default function Hakkimizda() {
           minHeight: "80vh",
         }}
       >
-        <h1>Hakkımızda</h1>
+        <h1>Hakkında</h1>
         <ul>
           <li>Biz kimiz</li>
         </ul>

@@ -30,12 +30,6 @@ export default function Home() {
         <AboutSection />
         <ProductPreview />
         <CarouselComponent2 />
-        <section style={{ padding: "2rem" }}>
-          <h1>Hoş Geldiniz</h1>
-          <p>
-            Bu Tuğsan Yangın Söndürme Sistemleri web sitesinin ana sayfasıdır.
-          </p>
-        </section>
       </main>
       <Footer />
     </>

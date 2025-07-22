@@ -28,17 +28,17 @@ export default function Topbar({ onVisibleChange }) {
         </div>
         <div className={styles.contactLinks}>
           <a
-            href="https://wa.me/905551112233"
+            href="https://wa.me/905324791358"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
             <FaWhatsapp />
-            <span>+90 555 111 22 33</span>
+            <span>+90 532 479 13 58</span>
           </a>
-          <a href="mailto:info@firma.com" className={styles.link}>
+          <a href="mailto:info@tugsanyangin.com.tr" className={styles.link}>
             <FaEnvelope />
-            <span>info@firma.com</span>
+            <span>info@tugsanyangin.com.tr</span>
           </a>
         </div>
       </div>
