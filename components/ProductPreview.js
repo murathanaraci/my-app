@@ -6,18 +6,24 @@ export default function ProductPreview() {
     <section className={styles.products}>
       <h2>Ürünlerimiz</h2>
       <div className={styles.grid}>
-        <div className={styles.card}>
-          <img src="/1.jpg" alt="Yangın Tüpü" width={200} />
-          <div>Yangın Tüpü</div>
-        </div>
-        <div className={styles.card}>
-          <img src="/2.jpg" alt="Yangın Dolabı" width={200} />
-          <div>Yangın Dolabı</div>
-        </div>
-        <div className={styles.card}>
-          <img src="/3.jpg" alt="Gazlı Söndürme" width={200} />
-          <div>Gazlı Söndürme</div>
-        </div>
+        <Link href="/urunler/yanginAlarmi">
+          <div className={styles.card}>
+            <img src="/Alarm.jpg" alt="Yangın Alarmı" width={200} />
+            <div>Yangın Alarmı</div>
+          </div>
+        </Link>
+        <Link href="/urunler/dumanDedektoru">
+          <div className={styles.card}>
+            <img src="/Dedektor.jpg" alt="Duman Dedektörü" width={200} />
+            <div>Duman Dedektörü</div>
+          </div>
+        </Link>
+        <Link href="/urunler/yanginTupu">
+          <div className={styles.card}>
+            <img src="/1.jpg" alt="Yangın Tüpü" width={200} />
+            <div>Yangın Tüpü</div>
+          </div>
+        </Link>
       </div>
       <Link href="/urunler" className={styles.more}>
         Tüm Ürünler

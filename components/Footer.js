@@ -2,11 +2,13 @@
 import styles from "./Footer.module.css";
 import { FaWhatsapp, FaEnvelope, FaClock } from "react-icons/fa";
 import Link from "next/link";
+import MapComponent from "./MapComponent";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+        <MapComponent />
         <div className={styles.logoSection}>
           <img src="/logo.jpg" alt="Tuğsan Logo" className={styles.logo} />
           <p>Tuğsan Yangın Söndürme Sistemleri</p>

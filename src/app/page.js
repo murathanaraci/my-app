@@ -31,6 +31,7 @@ export default function Home() {
         <ProductPreview />
         <CarouselComponent2 />
       </main>
+
       <Footer />
     </>
   );

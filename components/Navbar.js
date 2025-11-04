@@ -42,7 +42,9 @@ export default function Navbar({ topbarVisible }) {
         <li>
           <Link href="/">Ana Sayfa</Link>
         </li>
-
+        <li>
+          <Link href="/hakkimizda">Hakkımızda</Link>
+        </li>
         <li
           className={styles.dropdown}
           onMouseEnter={() => !isMobile && setUrunlerOpen(true)}
@@ -64,13 +66,16 @@ export default function Navbar({ topbarVisible }) {
             }`}
           >
             <li>
-              <Link href="/urunler/sogutma">Soğutma Sistemleri</Link>
+              <Link href="/urunler/yanginAlarmi">Yangın Alarmı</Link>
             </li>
             <li>
-              <Link href="/urunler/yangin">Yangın Söndürme</Link>
+              <Link href="/urunler/dumanDedektoru">Duman Dedektörü</Link>
             </li>
             <li>
-              <Link href="/urunler/diger">Diğer Ürünler</Link>
+              <Link href="/urunler/yanginTupu">Yangın Tüpü</Link>
+            </li>
+            <li>
+              <Link href="/urunler">Tüm Ürünler</Link>
             </li>
           </ul>
         </li>

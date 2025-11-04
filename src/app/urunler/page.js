@@ -1,6 +1,6 @@
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-
+import ProductPreview from "../../../components/ProductPreview";
 export default function Urunler() {
   return (
     <>
@@ -14,13 +14,8 @@ export default function Urunler() {
         }}
       >
         <h1>Ürünlerimiz</h1>
-        <ul>
-          <li>Yangın Söndürme Tüpleri</li>
-          <li>Yangın Alarm Sistemleri</li>
-          <li>Otomatik Sprinkler Sistemleri</li>
-          <li>Duman Dedektörleri</li>
-          {/* Daha fazla ürün ekleyebilirsiniz */}
-        </ul>
+
+        <ProductPreview />
       </main>
       <Footer />
     </>

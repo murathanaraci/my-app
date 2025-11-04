@@ -1,6 +1,7 @@
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import HeroSection from "../../../components/HeroSection";
+import MapComponent from "../../../components/MapComponent";
 
 export default function Iletisim() {
   return (
@@ -15,7 +16,6 @@ export default function Iletisim() {
         }}
       >
         <h1>İletişim</h1>
-        {/* You may want to add a contact form or contact details here */}
         <HeroSection />
       </main>
       <Footer />
