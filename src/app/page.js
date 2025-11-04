@@ -25,11 +25,10 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        <HeroSection />
-        <CarouselComponent />
+        <CarouselComponent2 />
+        {/* <CarouselComponent /> */}
         <AboutSection />
         <ProductPreview />
-        <CarouselComponent2 />
       </main>
 
       <Footer />
