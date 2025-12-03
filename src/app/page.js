@@ -28,7 +28,6 @@ export default function Home() {
         <br />
         <br /> <br />
         <CarouselComponent2 />
-        {/* <CarouselComponent /> */}
         <AboutSection />
         <ProductPreview />
       </main>

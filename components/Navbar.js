@@ -66,13 +66,13 @@ export default function Navbar({ topbarVisible }) {
             }`}
           >
             <li>
-              <Link href="/urunler/yanginAlarmi">Yangın Alarmı</Link>
+              <Link href="/urunler/alarm-sistemleri">Yangın Alarmı</Link>
             </li>
             <li>
-              <Link href="/urunler/dumanDedektoru">Duman Dedektörü</Link>
+              <Link href="/urunler/duman-dedektorleri">Duman Dedektörü</Link>
             </li>
             <li>
-              <Link href="/urunler/yanginTupu">Yangın Tüpü</Link>
+              <Link href="/urunler/yangin-sondurme-tupleri">Yangın Tüpü</Link>
             </li>
             <li>
               <Link href="/urunler">Tüm Ürünler</Link>
