@@ -24,7 +24,7 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <Link href="/iletisim" className={styles.cta}>
+        <Link href="mailto:info@tugsanyangin.com.tr" className={styles.cta}>
           Bize Ulaşın
         </Link>
       </div>

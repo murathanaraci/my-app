@@ -13,8 +13,6 @@ export default function Urunler() {
           minHeight: "80vh",
         }}
       >
-        <h1>Ürünlerimiz</h1>
-
         <ProductPreview />
       </main>
       <Footer />

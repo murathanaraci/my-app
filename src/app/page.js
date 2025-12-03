@@ -25,6 +25,8 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
+        <br />
+        <br /> <br />
         <CarouselComponent2 />
         {/* <CarouselComponent /> */}
         <AboutSection />

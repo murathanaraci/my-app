@@ -8,6 +8,7 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
+  width: 75%;
   color: #fff;
   text-align: center;
 }
@@ -28,4 +29,23 @@
 .cta:focus {
   background: #b30000; /* Darker red on hover/focus */
   outline: none;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* ikonlar arası boşluk */
+  align-items: center; /* tüm linkleri yatayda ortalar */
+  justify-content: center; /* dikeyde ortalar (opsiyonel) */
+  margin-top: 1rem; /* başlıktan biraz boşluk bırakmak için */
+}
+
+.link {
+  display: flex;
+  align-items: center; /* ikon ve yazıyı aynı hizada yapar */
+  justify-content: center; /* ikon ve yazıyı yatayda ortalar */
+  gap: 0.5rem; /* ikon ve yazı arası boşluk */
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
 }
