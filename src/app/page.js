@@ -7,7 +7,7 @@ import CarouselComponent from "../../components/CarouselComponent";
 import Topbar from "../../components/Topbar";
 import AboutSection from "../../components/AboutSection";
 import ProductPreview from "../../components/ProductPreview";
-import Partners from "../../components/Partners";
+
 import HeroSection from "../../components/HeroSection";
 import CarouselComponent2 from "../../components/CarouselComponent2";
 
@@ -31,7 +31,6 @@ export default function Home() {
         <CarouselComponent2 />
         <AboutSection />
         <ProductPreview />
-        <Partners />
       </main>
 
       <Footer />
