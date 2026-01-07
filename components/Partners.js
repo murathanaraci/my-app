@@ -1,10 +1,10 @@
-import styles from "./ProductPreview.module.css";
+import styles from "./Partners.css";
 import Link from "next/link";
 
-export default function ProductPreview() {
+export default function Partners() {
   return (
-    <section className={styles.products}>
-      <h2>Ürünlerimiz</h2>
+    <section className={styles.Partners}>
+      <h2>Çözüm ortaklarımız</h2>
       <div className={styles.grid}>
         <Link href="/urunler/alarm-sistemleri">
           <div className={styles.card}>

@@ -43,6 +43,9 @@ export default function Navbar({ topbarVisible }) {
           <Link href="/">Ana Sayfa</Link>
         </li>
         <li>
+          <Link href="/referanslar">Referanslar</Link>
+        </li>
+        <li>
           <Link href="/hakkimizda">Hakkımızda</Link>
         </li>
         <li
