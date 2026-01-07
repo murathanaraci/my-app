@@ -31,7 +31,7 @@ export default function Home() {
         <CarouselComponent2 />
         <AboutSection />
         <ProductPreview />
-        {/* <Partners /> */}
+        <Partners />
       </main>
 
       <Footer />
