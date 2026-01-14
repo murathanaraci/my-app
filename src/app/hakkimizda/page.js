@@ -1,5 +1,6 @@
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import Link from "next/link";
 
 export default function Hakkinda() {
   return (
@@ -59,6 +60,22 @@ export default function Hakkinda() {
               </p>
               <br />
               <br />
+              <Link
+                href="/referanslar"
+                style={{
+                  display: "inline-block",
+                  marginTop: "1rem",
+                  color: "red",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  borderRadius: "4px",
+                  padding: "0.5rem 1.2rem",
+                  background: "#ffeaea",
+                  transition: "background 0.2s, color 0.2s",
+                }}
+              >
+                REFERANSLARIMIZI İNCELEYİN
+              </Link>
               <br />
             </section>
           </div>

@@ -1,4 +1,5 @@
 import styles from "./AboutSection.module.css";
+import Link from "next/link";
 
 // "use client"; // Uncomment if you plan to use client-side hooks
 
@@ -58,6 +59,22 @@ export default function AboutSection() {
               </p>
               <br />
               <br />
+              <Link
+                href="/referanslar"
+                style={{
+                  display: "inline-block",
+                  marginTop: "1rem",
+                  color: "red",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  borderRadius: "4px",
+                  padding: "0.5rem 1.2rem",
+                  background: "#ffeaea",
+                  transition: "background 0.2s, color 0.2s",
+                }}
+              >
+                REFERANSLARIMIZI İNCELEYİN
+              </Link>
               <br />
             </section>
           </div>

@@ -6,13 +6,16 @@ export default function ProductPreview2() {
     <section className={styles.product2}>
       <h1>TEDARİKÇİLERİMİZ</h1>
       <div className={styles.grid}>
-        <Link href="https://www.astreaonline.com/kategori/su-pompasi">
+        <Link
+          href="https://www.astreaonline.com/kategori/su-pompasi"
+          target="_blank"
+        >
           <div className={styles.card}>
             <img src="asterapompa.webp" alt="ASTERA POMPA" width={200} />
             <div>ASTERA POMPA</div>
           </div>
         </Link>
-        <Link href="https://kaizenguvenlik.com.tr/">
+        <Link href="https://kaizenguvenlik.com.tr/" target="_blank">
           <div className={styles.card}>
             <img
               src="/logo_kaizen.png"
@@ -22,7 +25,7 @@ export default function ProductPreview2() {
             <div>KAİZEN GÜVENLİK TEKNOLOJİLERİ</div>
           </div>
         </Link>
-        <Link href="/urunler/yangin-sondurme-tupleri">
+        <Link href="/urunler/yangin-sondurme-tupleri" target="_blank">
           <div className={styles.card}>
             <img
               src="/logo_kaizen.png"
